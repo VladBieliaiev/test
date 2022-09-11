@@ -1,0 +1,140 @@
+body{
+   background-color:#90a4ae ;
+   
+}
+
+.todo__container {
+   display: flex;
+   margin: auto;
+   flex-direction:column;
+   height: 100%;
+   max-width: 38rem;
+}
+.todo__title {
+   padding: 6rem 0 2rem;
+   font-size: 2.5rem;
+   font-weight: bold;
+   text-align: center;
+   color: #f3f3f3;
+}
+.todo__body {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 2rem;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+}
+#task-description{
+   padding: 0.5rem 0;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   text-align: center;
+   font-size: 1.5rem;
+   color: #f3f3f3;
+   background-color:#6a8391;
+}
+.todo__input {
+   width: 100%;
+}
+.todo__button {
+   padding: 1rem 0;
+}
+.todo__button button {
+   border: none;
+   border-radius: 5px;
+   padding: 0.4em 1.3rem;
+   background-color:#6a8391;
+   color: #f3f3f3;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+.todo__button button:hover{
+   background-color: #4e6d83;
+   transition: 0.2s;
+}
+.todo-tasks {
+   width: 100%;
+   
+}
+
+.todo-task__list {
+}
+.task-item {
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   background-color: #b1c3cc;
+   padding: 1.2rem 1rem;
+   margin: 0.25rem 0;
+}
+
+.task-item:hover{
+   box-shadow: 0 0 10px grey;
+}
+.task-item__description {
+   flex: 1 1 auto;
+   text-align: left;
+   color: #fffefe;
+   font-size: 1.7rem;
+   overflow-wrap:anywhere;
+}
+.buttons {
+   display: flex;
+   align-items: center;
+}
+.btn-complete {
+   display: block;
+   width: 1.2rem;
+   height: 1.2rem;
+   color: #4e6d83;
+}
+
+.task-item__delete{
+   background-color:#b1c3cc;
+   border: none;
+}
+
+.task-item__delete img{
+   width: 2rem;
+   height: 2rem;
+}
+
+.done{
+   opacity: 0.5;
+}
+
+@media(max-width: 792px){
+   .todo__container {
+      padding: 1rem;
+   }
+   .todo__title {
+      padding: 3rem 0 1.5rem;
+      font-size: 2rem;
+   }
+   #task-description{
+      padding: 0.3rem 0;
+      font-size: 1.4rem;
+   }
+   .todo__button {
+      padding: 1rem 0;
+   }
+   .task-item {
+      padding: 0.3rem 1rem;
+   }
+   
+   .task-item:hover{
+      box-shadow: 0 0 10px grey;
+   }
+   .task-item__description {
+      flex: 1 1 auto;
+      text-align: left;
+      color: #fffefe;
+      font-size: 1.4rem;
+      overflow-wrap:anywhere;
+   }
+}
